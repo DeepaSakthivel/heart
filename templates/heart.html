@@ -1,0 +1,73 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>heartdata</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+<body>
+    <div class="login-box">
+            <h1>PREDICTING THE TARGET OF HEART</h1>
+            <h2>Heart Data</h2>
+            <form action="calculate">
+                <div class="user-box">
+                    <input type="text" name="exp1" required="" value="{{exp1}}">
+                    <label>Age</label>
+                </div>
+                <div class="user-box">
+                     <input type="text" name="exp2" required="" value="{{exp2}}">
+                    <label>Sex</label>
+                </div> 
+                <div class="user-box">
+                    <input type="text" name="exp3" required="" value="{{exp3}}">
+                    <label>Cp</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp4" required="" value="{{exp4}}">
+                    <label>RestingBloodPressure</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp5" required="" value="{{exp5}}">
+                    <label>Cholestrol</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp6" required="" value="{{exp6}}">
+                    <label>Fbs</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp7" required="" value="{{exp7}}">
+                    <label>RestEcg</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp8" required="" value="{{exp8}}">
+                    <label>MaximumHeartrate</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp9" required="" value="{{exp9}}">
+                    <label>ExcerciseInduced Angina</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp10" required="" value="{{exp10}}">
+                    <label>OldPeak</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp11" required="" value="{{exp11}}">
+                    <label>Slope</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp12" required="" value="{{exp12}}">
+                    <label>Ca</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="exp13" required="" value="{{exp13}}">
+                    <label>Thal</label>
+                </div>
+                <input type="submit" name="submit" value="predict" class="submitbtn" />
+            </form><br>
+            <h2>Target : {{predicted}}</h2>
+        </div>
+    
+</body>
+</html>
+
+           
